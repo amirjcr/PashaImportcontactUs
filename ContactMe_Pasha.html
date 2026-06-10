@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - Luxury White & Gold</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+    
+    <style>
+        :root {
+            --gold: #d4af37;
+            --white: #ffffff;
+            --bg-dark: #0a0a0a;
+            --bg-gold: #1a1505;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(150deg, var(--bg-dark) 50%, var(--bg-gold) 50%);
+            background-attachment: fixed;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 600px; width: 100%; text-align: center; }
+
+        .hero h1 { color: var(--gold); font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { color: rgba(255,255,255,0.7); margin-bottom: 40px; }
+
+        /* کارت‌ها با حاشیه سفید و طلایی */
+        .card {
+            background: rgba(255, 255, 255, 0.05); /* تم سفید بسیار ملایم */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .icon-box { color: var(--gold); width: 40px; }
+
+        /* آیکون‌های شبکه‌های اجتماعی */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-social {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-social:hover {
+            background: var(--gold);
+            color: black;
+            border-color: var(--gold);
+        }
+
+        .btn-social svg { width: 24px; height: 24px; fill: currentColor; }
+
+        @media (max-width: 600px) {
+            body { background: linear-gradient(to bottom, var(--bg-dark) 40%, var(--bg-gold) 40%); }
+            .social-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <h1>تماس با ما</h1>
+            <p>بازرگانی پاشا
+وارد کننده انواع برند های اروپای
+انواع اکسسوری (بدلیجات. عینک .کیف .شال.کلاه.لباس و...)
+پخش عمده و تک با بهترین کیفت و کمترین قیمت</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" fill="currentColor"/></svg>
+            </div>
+            <div>
+                <strong style="color: var(--gold);">تلفن دفتر</strong><br>
+                <span>09022541668</span>
+            </div>
+        </div>
+
+        <div class="social-grid">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/Pashaimport" class="btn-social">
+                <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                اینستاگرام
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/PashaImport" class="btn-social">
+                <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19l-9.5 5.97L2.4 11.5c-.75-.29-.78-1.34.05-1.63l17.06-6.52c.79-.29 1.48.2 1.24 1.34l-2.88 13.56c-.22 1.04-1.02 1.31-1.84 1.14l-4.75-3.52z"/></svg>
+                تلگرام
+            </a>
+            <!-- Bale (استفاده از آیکون عمومی) -->
+            <a href="https://web.bale.ai/@pashaa_import" class="btn-social">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                بله
+            </a>
+            <!-- Rubika -->
+            <a href="https://rubika.ir/pashaa_import" class="btn-social">
+                <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                روبیکا
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
